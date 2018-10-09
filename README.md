@@ -28,4 +28,4 @@ git clone https://github.com/geksong/cobar-docker.git
 ```
 docker container ls -a | grep cobar-default
 ```
-and then you will see an container name is cobar-default is UP. And now you can check then stdout log by attach to the container, the cobar log path is ```/usr/local/cobar/logs/stdout.log```
+and then you will see an container name is ```cobar-default``` is UP. And now you can check then stdout log by attach to the container, the cobar log path is ```/usr/local/cobar/logs/stdout.log```
