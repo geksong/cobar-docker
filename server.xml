@@ -38,6 +38,11 @@
     <property name="password">test</property>
     <property name="schemas">dbtest</property>
   </user>
+  
+  <user name="cart">
+    <property name="password">cart@552208</property>
+    <property name="schemas">cart</property>
+  </user>
     
   <user name="root">
     <property name="password">123456</property>
