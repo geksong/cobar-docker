@@ -21,6 +21,11 @@
   <schema name="dbtest" dataNode="dnTest1">
     <table name="tb2" dataNode="dnTest2,dnTest3" rule="rule1" />
   </schema>
+  
+  <schema name="cart" dataNode="dnTest1">
+    <table name="cart" dataNode="dnTest2,dnTest3" rule="cartrule"/>
+    <table name="cart_item" dataNode="dnTest2,dnTest3" rule="cartitemrule"/>
+  </schema>
 
   <!-- 数据节点定义，数据节点由数据源和其他一些参数组织而成。-->
   <dataNode name="dnTest1">

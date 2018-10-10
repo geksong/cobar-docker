@@ -25,8 +25,27 @@
     </rule>
   </tableRule>
 
+  <tableRule name="cartrule">
+    <rule>
+      <columns>sharding_key</columns>
+      <algorithm><![CDATA[ stringfunc(${sharding_key}) ]]></algorithm>
+    </rule>
+  </tableRule>
+
+  <tableRule name="cartitemrule">
+    <rule>
+      <columns>cart_id</columns>
+      <algorithm><![CDATA[ func1(${cart_id})]]></algorithm>
+    </rule>
+  </tableRule>
+
   <!-- 路由函数定义 -->
   <function name="func1" class="com.alibaba.cobar.route.function.PartitionByLong">
+    <property name="partitionCount">2</property>
+    <property name="partitionLength">512</property>
+  </function>
+
+  <function name="stringfunc" class="com.alibaba.cobar.route.function.PartitionByString">
     <property name="partitionCount">2</property>
     <property name="partitionLength">512</property>
   </function>
