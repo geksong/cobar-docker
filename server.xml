@@ -56,7 +56,13 @@
       <property name="weight">1</property>
     </node>
   </cluster>
-   -->
+  -->
+  <cluster>
+    <node name="cobarnode1">
+      <property name="host">127.0.0.1</property>
+      <property name="weight">1</property>
+    </node>
+  </cluster>
    
   <!-- 隔离区定义，可以限定某个主机上只允许某个用户登录。 -->
   <!--
